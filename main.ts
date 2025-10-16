@@ -15,7 +15,7 @@ basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P15, 0)
 
-// This turns on an LED
+// This turns on an LED in different colors
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P13, 1)
@@ -59,5 +59,11 @@ input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("White")
     basic.pause(1000)
+
+    // This turns off an LED
+    basic.showIcon(IconNames.Yes)
+    pins.digitalWritePin(DigitalPin.P13, 0)
+    pins.digitalWritePin(DigitalPin.P14, 0)
+    pins.digitalWritePin(DigitalPin.P15, 0)
 
 })
